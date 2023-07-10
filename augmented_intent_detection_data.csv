@@ -1,0 +1,227 @@
+sentence,slots,intent_label
+و لطفا ، برام در حواله ای پایا بزن,O O B-Method I-Method O,transaction_paya
+پایا بزن,B-Method O,transaction_paya
+و ماده دیگر کارت ملتم است چقدره,O O B-Bankname O,balance_query
+چقدر تو کارت ملتم پول دارم,O O O B-Bankname O O,balance_query
+از هر حساب بر ملتم در به شکل حساب ir1234567891234656789 از همین قدر امروز زیر پایا یاد کن,O O B-bankname O O B-iban O O B-Method O,transaction_paya
+با مبلغ حدود ده هزار میلیون دستگاه به عنوان شماره ملی ir123456789123456789 این پایا ش کن,O B-amount I-amount O O B-iban B-Method O,transaction_paya
+چطور میتوانم از اپشن حواله استفاده کنم تا پول رو به شماره شبای ir5465123185674561 به نام قلی پور واریز کنم,O O O O B-Method O O O O O O O O B-iban O O B-username I-username O O,transaction_paya
+از حساب 90056789 قبض اب را بده,O O B-Accountnumber B-Billname I-Billname O O,bill_payment
+وی برای انتقال حساب خانه ملت تراکنش کاری پرداخت زیرا قبض اب را بزن,O O B-Bankname O O B-Billname I-Billname O O,bill_payment
+تصویب درخواست ملی پرداخت حقوق قبض اب را به دولت شماره 6 شناسه تاریخی 86754788999987,O O B-Billname I-Billname O O O O,bill_payment
+10 میلیون میخوام حواله بزنم برای علی باقری با شماره شبای IR789541000056210781007836,B-amount I-amount O B-Method O O B-username I-username O O B-Method B-iban,transaction_paya
+موجودی روزنامه حساب بانک اسلامی ملتم علی چیه,O O B-Bankname B-Username O,balance_query
+... میخوام از 100 هر میلیون... حواله کنم اشاره به اصغر است که در شباش هم اینه » ir5465123185674561,O B-amount I-amount B-Method O O B-username O O O B-iban,transaction_paya
+شاعر اسم من سید علی احمدی میرزا هست,O O B-Username I-Username O,introduce
+و میتونی تحت قبض ابمو و بدی,O B-Billname I-Billname O,bill_payment
+ایا وقتی امکان پایین پرداخت کردن قبض برق از یک شماره کارت 5014 - در 2910 - در 2424 - 237 1414 وجود دارد دارد,O O O B-Billname I-Billname O O O B-Cartnumber O O,bill_payment
+میخوام به حساب علی احمدی از حساب ملتم کارت به کارت کنم,O O O B-Username I-Username O O B-Bankname B-Method I-Method I-Method O,transaction_card
+می خوام از پایا جا کنم به حساب حساب علی رضا خواننده به مبلغ سه پنج میلیون کل تومان اول که شماره شباش ان هست,O O B-Method O O O B-username I-username O O B-amount B-amount B-amount O O B-iban O,transaction_paya
+euro 10 10 میلیون... میخوام هر حواله خود بزنم متن برای علی احمد باقری با شعر شماره ۴ شبای کوتاه ir789541000056210781007836,B-amount I-amount O B-Method O O B-username I-username O O O B-iban,transaction_paya
+باید 50 تومن بزنم به کارت ممد که شماره کارتش 12348567894156 هست . بگو چیکار کنم,O B-Amount I-Amount O O O B-Username O O O B-Cartnumber O O O O O,transaction_card
+شهر موجودی بانک ده ملتمو در بهم بگو,O B-Bankname I-Bankname O O,balance_query
+... چجوری چون قبض گاز ٬ مو میتوانند با بانک ملی ایران پرداخت کنم,O B-Billname I-Billname O O B-Bankname I-Bankname O O,bill_payment
+این پول ابم و رو خودتون و میدین,O B-Billname O O O,bill_payment
+خانه به حساب رضا احمد احمدی مهر ۳ میلیون هزار تومان پایا کن,O O B-username I-username B-amount I-amount I-amount B-Method O,transaction_paya
+و چجوری 30 و ملیون دیر حواله ترک کنم مرد اصغر زندگی به بعد شماره ۲۱ شبای و ir12345674897561,O B-amount I-amount B-Method O B-username O O B-Method B-iban,transaction_paya
+هیچ موجودی من ملتم من چقدر هست,O B-Bankname O O,balance_query
+موجودی آخرین حساب من بگو,O O O O O,balance_query
+برای حساب ملت تراکنش پرداخت قبض اب را بزن,O O B-Bankname O O B-Billname I-Billname O O,bill_payment
+شعر لطفا شعر یه دار حواله ، پایا بزن ، برام,O O B-Method I-Method O O,transaction_paya
+پول ابم رو خودتون میدین,O B-Billname O O O,bill_payment
+میشه 150 هزار تومن کارت به کارت کنی,O B-Amount O O B-Method I-Method I-Method O,transaction_card
+موجودی حساب بانک ملی من رو بگو,O O B-Bankname I-Bankname O O O,balance_query
+کارت به کارت میخوام از کارت ملی به شماره کارت 4548875812457103 انجام بدم,B-Method I-Method I-Method O O O B-Bankname O O O B-Cartnumber O O,transaction_card
+قبوض برق و گاز را از حساب سپه ام پرداخت کن,B-Billname I-Billname O I-Billname O O O B-Bankname O O O,bill_payment
+هر پایا ای میخوام او بزنم,B-Method O O,transaction_paya
+وی لطفا میکند یه مبلغی را به کارت را به عنوان کارت بیان کن برام,O O O O B-Method I-Method I-Method O O,transaction_card
+بعد از جدول حساب 1234567 برای قبض تلفن ۱ رو پرداخت حق کن,O O B-Accountnumber B-Billname I-Billname O O O,bill_payment
+قبض تلفن همراه من پرداخت شود,B-Billname I-Billname O O O O,bill_payment
+ما 10 هزار میلیون حساب میخوام... حواله حساب بزنم ؟ برای نور علی باقری ؛ با کتاب شماره شبای از ir789541000056210781007836,B-amount I-amount O B-Method O O B-username I-username O O B-Method B-iban,transaction_paya
+مبلغ خود 50 میلیون پایا که بزن امد به علی اللہ احمدی,O B-amount I-amount B-Method O O B-username I-username,transaction_paya
+میخوام فقط از امریکا حساب ملتم از قبض از اب خون را پرداخت کنم,O O O B-Bankname B-Billname I-Billname O O O,bill_payment
+از حسابم از قبض که ابم نیست و من میدی,O O B-Billname I-Billname O O,bill_payment
+میخوام به حساب محمد توکلی پول کارت به کارت کنم,O O O B-Username I-Username O B-Method I-Method I-Method O,transaction_card
+چون بوگو ؟ ببینیم به چقده پوول ها دارم,O O O O O,balance_query
+من میخوام از مدیر حساب بانک ملت جان خودم همچنین مبلغ 30 میلیون به حساب شرکت بانک ملی ملت بابام متعلق به صدر نام حسن علی مالکی حاضر به شماره حساب 87858420 واریز اعلام کنم,O O O O O B-Bankname O O B-Amount I-Amount O O O B-Bankname O O O B-Username I-Username O O O B-Accountnumber O O,transaction_card
+میشه برام یه حواله پایا بزنی,O O O B-Method I-Method O,transaction_paya
+ترانه بیست ساعت تومان است به کارت علی و احمدی بزن یکی از کارت تا ملت م که تاریخش روز ۰۳ ساعت ۰۴ هست,B-Amount I-Amount O O B-Username I-Username O O O B-Bankname O O O B-exprdate B-exprdate O,transaction_card
+از کارت سپهم در قبض ده اب م رو باز پرداخت ه کن,O O B-Bankname B-Billname I-Billname O O O,bill_payment
+قبض از یک نوع ، تلفن منزل به به شناسه شرکت قبض رسید 1257895425632 و از شناسه پرداخت 45896254 پرداخت به در مبلغ مجموع 200 هزار ۰۰۰ تومان,B-Billname O O I-Billname O O O O B-Billname O O O B-Billname O O B-amount I-amount O,bill_payment
+پول کارت به کارت کن,O B-Method I-Method I-Method O,transaction_card
+پایا میخوام بزنم,B-Method O O,transaction_paya
+اکنون من نه میخوام مبلغ سال 15 تا میلیون تومن به اقای مهدی منصور مفتاحی ، به شماره ۱۴ کارت شماره 5022 - 118 2910 - 2424 - 1414 انتقال می بدم,O O B-Amount I-Amount I-Amount I-Amount O O B-Username I-Username O O B-Cartnumber B-Cartnumber O O,transaction_card
+۱۲۰ هزار به حساب رضا احمدی بزن از کارت ملتم,B-Amount I-Amount O O B-Username I-Username O O O B-Bankname,transaction_card
+احمد حسین میری زاده هستم,B-Username I-Username O,introduce
+موعد قبض برق من سر رسیده و باید از طریق بانک ملت پرداخت بشه,O B-Billname I-Billname O O O O O O O B-Bankname I-Bankname O O,bill_payment
+احمد احمد قاسم افضلی هستم,B-Username I-Username O,introduce
+میتونی قبض گازمو با کارت ملی بدی,O B-Billname I-Billname O O B-Bankname O,bill_payment
+میخوام از اپشن پرداخت قبض بانک مسکن استفاده کنم,O O O O B-Billname B-Bankname I-Bankname O O,bill_payment
+بهم بگو به چه نحوی میتونم 100 هزار تومن به بانک ملی با شبای ir 30564894352156 که به نام احمد جعفری هست بزنم,O O O O O O B-Amount I-Amount I-Amount O O B-Bankname O O O B-Iban O O O B-Username I-Username O O,transaction_card
+میخوام از حساب ملتم قبض آب را پرداخت کنم,O O O B-Bankname B-Billname I-Billname O O O,bill_payment
+میخواهم پولی را را از حساب ريیس ملت پهلوی با شماره ایت 48759214 به حساب سید رضا مسعود احمدی وزیر کارت به کارت کنم ؟ ، درضمن تاریخ انقضای به کارت 02 / 06 و هست,O O O O O B-Bankname O O B-Accountnumber O O B-Username I-Username B-Method I-Method I-Method O O O O O O B-exprdate O,transaction_card
+من میخوام مبلغ 15 میلیون تومن به آقای مهدی مفتاحی به شماره کارت 5022-2910-2424-1414 انتقال بدم,O O B-Amount I-Amount I-Amount I-Amount O O B-Username I-Username O O B-Cartnumber B-Cartnumber O O,transaction_card
+میخوام یه مبلغی کارت به کارت انجام بدم,O O O B-Method I-Method I-Method O O,transaction_card
+ایا امکان برای پرداخت قبض فروش تلفن همراه به از ان حساب به شماره ان 1543 وجود دارد,O O O B-Billname I-Billname O O O O O B-Accountnumber O O,bill_payment
+میخوام با 50 درصد تومن هم برنم به هر کارت محمد علیرضا که به شماره هر کارتش ، اینه که 5892101058924130,O B-Amount I-Amount O O O B-Username O O O O B-Cartnumber,transaction_card
+قبض آب رو از کارت ملتم پرداخت کن,B-Billname I-Billname O O O B-Bankname O O,bill_payment
+اسم من علی احمدی هست,O O B-Username I-Username O,introduce
+تنها از نظر حساب عدد 90056789 باید قبض اب هم را بده,O O B-Accountnumber B-Billname I-Billname O O,bill_payment
+ان در شماره حساب بریتانیا 90056789 این میزان موجودی میتواند به اندازه من اعلام کن,O O O B-accountnumber O O O O O O,balance_query
+برام یه پایا بزن,O O B-Method O,transaction_paya
+چجوری 30 ملیون حواله کنم اصغر به شماره شبای ir12345674897561,O B-amount I-amount B-Method O B-username O O B-Method B-iban,transaction_paya
+از حساب اصلی ، ۵۵ هزار تومان به کارت رضا بزن,O O O O B-Amount I-Amount I-Amount O O B-Username O,transaction_card
+میزان حساب من برای بانک ملت چیه,O O O O B-Bankname I-Bankname O,balance_query
+اسمم احسان فریدونی هست,O B-Username I-Username O,introduce
+شهرستان میتونی قبض امام گازمو ، با درجه کارت دانشگاه ملی بدی,O B-Billname I-Billname O O B-Bankname O,bill_payment
+دوست دارم کارت به کارت کنم,O O B-Method I-Method I-Method O,transaction_card
+هم ایا میزان امکان پرداخت قبض تلفن خارجی از حساب دولتی بانک بینالمللی ملت وجود دارد,O O O B-Billname I-Billname O O B-Bankname I-Bankname O O,bill_payment
+قانون موجودی حساب دا من چ چقدر است,O O O O O,balance_query
+دوست ما دارم هم پایا جا بزنم,O O B-Method O,transaction_paya
+بانک ملی من نمیدونم موجودیش چقدره لطفا بهم بگو,B-Bankname I-Bankname O O O O O O O,balance_query
+یعنی فرداد الله محسنی که هستم,B-Username I-Username O,introduce
+انها چقدر نیست تو کارت از ملتم پول را دارم,O O O B-Bankname O O,balance_query
+آیا امکان پرداخت قبض تلفن همراه از حساب به شماره 1543 وجود دارد,O O O B-Billname I-Billname O O O O O B-Accountnumber O O,bill_payment
+موجودی حساب من الان چقدر است,O O O O O O,balance_query
+صد تومان به کارت رضا احمدی بریز,B-Amount I-Amount O O B-Username I-Username O,transaction_card
+ماده کارت ملتم چقدره,O O B-Bankname O,balance_query
+محمد باقری هستم,B-Username I-Username O,introduce
+10 تا میلیون نفر میخوام ما حواله بزنم البوم برای علی رضا باقری,B-amount I-amount O B-Method O O B-username I-username,transaction_paya
+از حساب 1234567 قبض تلفن رو پرداخت کن,O O B-Accountnumber B-Billname I-Billname O O O,bill_payment
+250 هزار تومن کارت به کارت کن به کارت محمود ریاحی,B-Amount I-Amount I-Amount B-Method I-Method I-Method O O O B-Username I-Username,transaction_card
+مایل هستم کارت به کارت انجام دهم,O O B-Method I-Method I-Method O O,transaction_card
+او میخوام ، 50 تن هزار دلار تومن به علی باقری که کارت به امریکا کارت کنم,O B-Amount I-Amount I-Amount O B-Username I-Username B-Method I-Method I-Method O,transaction_card
+از سریع شدن سه میلیون متر به کارت رضا احمدی جان بزن,O B-Amount I-Amount O O B-Username I-Username O,transaction_card
+علی اکبریم,B-Username I-Username,introduce
+میخوام حواله پایا بزنم,O B-Method I-Method O,transaction_paya
+میخواهم پولی را از حساب ملت با شماره 48759214 به حساب رضا احمدی کارت به کارت کنم ، درضمن تاریخ انقضای کارت 02/06 هست,O O O O O B-Bankname O O B-Accountnumber O O B-Username I-Username B-Method I-Method I-Method O O O O O O B-exprdate O,transaction_card
+ان ایا امکان پرداخت این قبض گاز از م طریق کد کارت تجاری شماره ال 5022 -... 2910 - 2424 - 1414 م وجود دارد,O O O B-Billname I-Billname O O O O B-Cartnumber O O,bill_payment
+لطفا یه مبلغی را کارت به کارت کن برام,O O O O B-Method I-Method I-Method O O,transaction_card
+لطفا برام حواله پایا بزن,O O B-Method I-Method O,transaction_paya
+همه میخوام هم به همین حساب علی منصور احمدی از این حساب ملتم کارت رو به کارت کنم,O O O B-Username I-Username O O B-Bankname B-Method I-Method I-Method O,transaction_card
+10 میلیون میخوام حواله بزنم برای علی باقری با شماره شبای IR789541000056210781007836,B-amount I-amount O B-Method O O B-username I-username O O O B-iban,transaction_paya
+بهم من بگو به دنبال چه هر نحوی میتونم پرداخت 100 هزار تومن ، به طرف بانک ملی با شبای ir 30564894352156 که شما به خود نام شیخ احمد علی جعفری هست بزنم,O O O O O O B-Amount I-Amount I-Amount O O B-Bankname O O O B-Iban O O O B-Username I-Username O O,transaction_card
+برام دی یه ؟ پایا ما بزن,O O B-Method O,transaction_paya
+ابتدا باید از 50 g تومن بزنم ای به عنوان کارت ممد که شماره سوم کارتش نیز 12348567894156 ، هست. بگو ، چیکار حرکت کنم,O B-Amount I-Amount O O O B-Username O O O B-Cartnumber O O O O O,transaction_card
+من میخوام به 400 هزار تومن فقط به این شماره می شبا ir789541000056210781007836 پس به هر نام یا مايده از سعادتی به پایا استفاده کنم,O O B-amount I-amount I-amount O O O B-iban O O B-username I-username B-Method O,transaction_paya
+می خوام پایا کنم به حساب علی رضا به مبلغ پنج میلیون تومان که شماره شباش هست,O O B-Method O O O B-username I-username O O B-amount B-amount B-amount O O B-iban O,transaction_paya
+چون مایل می هستم کارت مشابه به این کارت انجام دهم,O O B-Method I-Method I-Method O O,transaction_card
+مبلغ 300 هزار تومان از حساب به شماره 2356049489563 به نام محمد گرگانی متعلق به بانک صادرات شعبه کرج را به حساب به شماره 7895456284526 به نام ایمان رسولی منتقل کن,O B-Amount I-Amount I-Amount O O O O B-Accountnumber O O B-Username I-Username O O O B-Bankname O O O O O O O B-Accountnumber O O B-Username I-Username O O,transaction_card
+حسین میری هستم,B-Username I-Username O,introduce
+و از طرف حساب ۱۲۳۴۵۶۷ پول نیز قبض اب نیز رو بالا بده,O O B-Accountnumber O B-Billname I-Billname O O,bill_payment
+میشه کل 150 هزار هزار و تومن کارت تو به دار کارت کنی,O B-Amount O O B-Method I-Method I-Method O,transaction_card
+سریع سه میلیون به کارت رضا احمدی بزن,O B-Amount I-Amount O O B-Username I-Username O,transaction_card
+این لطفا از شماره کارت بانک ملی ترکیه مبلغ £ 100 ، هزار هزار تومان به دو کارت 5022 - 2910 - ± 2424 - 1414 به به نام حسن ناصری در بانک ده سپه منتقل گردد,O O O O O B-Bankname O B-Amount I-Amount I-Amount O O B-Cartnumber O O B-Username I-Username O B-Bankname O O,transaction_card
+به پایا پا را برام با انجام بده,B-Method O O O O,transaction_paya
+چجوری 10 ملیون حواله کنم به کارت ملت ممد با شماره شبای ir5465123185674561,O B-amount I-amount O O O O B-bankname B-username O O O B-iban,transaction_paya
+احمد افضلی هستم,B-Username I-Username O,introduce
+موجودی اخرین سه حساب در من من بگو,O O O O O,balance_query
+تاریخ موجودی حساب اصلی بانک ملی ژاپن من رو بگو,O O B-Bankname I-Bankname O O O,balance_query
+اکنون بهم بگو ببینم ، چطور چنین میشه اگر قبض یا گار سر پرداخت مردم بشه,O O O O O B-Billname I-Billname O O,bill_payment
+پایا را برام انجام بده,B-Method O O O O,transaction_paya
+ده میشه چه موجودی از حساب نمونه ملی من رو بگی,O O O B-Bankname O O O,balance_query
+... میزان حساب من برای... بانک ، ملت چیه,O O O O B-Bankname I-Bankname O,balance_query
+قبض اب رو رو از کارت و ملتم ایران پرداخت ؟ کن,B-Billname I-Billname O O O B-Bankname O O,bill_payment
+چطور از 60 ٫ ملیون سال تومن بریزم که به عنوان کارت تا با همه شبای اشاره ir3542321564456,O B-amount I-amount I-amount O O O O B-Method B-iban,transaction_paya
+میخواستم از حسابم 50 تومن واریز کنی به حساب 48759214,O O O B-Amount I-Amount O O O O B-Accountnumber,transaction_card
+میخوام 100 میلیون حواله کنم به اصغر که شباش اینه ir5465123185674561,O B-amount I-amount B-Method O O B-username O O O B-iban,transaction_paya
+میتونی قبض آبمو بدی,O B-Billname I-Billname O,bill_payment
+همه این قبضهای شده من را با هر یک از کارتهایم به که موجودی نام دارند پرداخت کن نه و نه نتیجه دیگری را از گزارش ما بده,O B-Billname O O O O O O O O O O O O O O O O O,bill_payment
+از کارت سپه‌م قبض آب رو پرداخت کن,O O B-Bankname B-Billname I-Billname O O O,bill_payment
+10 میلیون میخوام حواله بزنم برای علی باقری,B-amount I-amount O B-Method O O B-username I-username,transaction_paya
+لطفا ام قبض به برق من دون رو... پرداخت کن,O B-Billname I-Billname O O O O,bill_payment
+چطور 60 ملیون تومن بریزم به کارت با شبای ir3542321564456,O B-amount I-amount I-amount O O O O B-Method B-iban,transaction_paya
+حال اسمم ، احسان فریدونی ما هست,O B-Username I-Username O,introduce
+1432 از راه کارت اخر 5022 - 2910 - 1422 2424 - 1438 1414 پول بزن را به نام 5022 - 1406 2910 - 1420 2424 - 1414,O O B-Cartnumber O O O B-Cartnumber,transaction_card
+ترجمه محمد علی باقری ، هستم,B-Username I-Username O,introduce
+موجودیمو بگو کارت 5022-2910-2424-1414,O O O B-cardnumber,balance_query
+50 ملیون حواله باید بزنم به علی که شماره شبای بانک ملتش ir5465123185674561 هست,B-amount I-amount O O O O B-username O O O O O B-iban O,transaction_paya
+برای احسان محمودی تهران 50 به هزار میلیون تومان واحد پول واریز ازاد کن,O B-Username I-Username B-Amount I-Amount I-Amount O O O,transaction_card
+قبض در تلفن برای همراه من پرداخت خواهد شود,B-Billname I-Billname O O O O,bill_payment
+چجوری به شماره حساب 532156489675896 50 هزار تومن پول بزنم,O O O O B-Accountnumber B-Amount I-Amount I-Amount O O,transaction_card
+گزارش از منابع ir123456789123456789 متعلق به سید علی خان مبلغ درامد دوازده ۶ میلیون میلیون تومان,O B-iban O B-username O B-amount I-amount I-amount,transaction_paya
+برای حساب علی باقری 100 تومن کارت به کارت کن,O O B-Username I-Username B-Amount O B-Method I-Method I-Method O,transaction_card
+ما میخوام یه یک مبلغی بر کارت به کارت ان انجام داده بدم,O O O B-Method I-Method I-Method O O,transaction_card
+اک پایا گل بزن,B-Method O,transaction_paya
+میخواستم از او حسابم ، 50 گرم تومن سفید واریز کنی و به ترتیب حساب 48759214,O O O B-Amount I-Amount O O O O B-Accountnumber,transaction_card
+« اسم خود من مولانا سجاد فضلی هست,O O B-Username I-Username O,introduce
+همچنین برای حساب علیرضا اکبری یک 100 ۱۰۰ میلیون پایا اشاره کن,O O B-username I-username B-amount I-amount B-Method O,transaction_paya
+ولی موجودی حساب دارد به شماره حساب وی 2356049 و چقدر,O O O O O B-accountnumber O,balance_query
+چجوری قبض گاز مو با بانک ملی پرداخت کنم,O B-Billname I-Billname O O B-Bankname I-Bankname O O,bill_payment
+از کارت 5022-2910-2424-1414 پول بزن به 5022-2910-2424-1414,O O B-Cartnumber O O O B-Cartnumber,transaction_card
+نیز میخوام دست از اپشن و پرداخت برای قبض بانک مسکن برای استفاده اعلام کنم,O O O O B-Billname B-Bankname I-Bankname O O,bill_payment
+آیا امکان پرداخت قبض برق از شماره کارت 5014-2910-2424-1414 وجود دارد,O O O B-Billname I-Billname O O O B-Cartnumber O O,bill_payment
+پول واریز کن,O O O,transaction_card
+در من می امشب به 12 هزار میلیون جلد حواله پایا شده به نام علی ، رنجبر که به شماره ام ir789541000056210781007836 تم ارسال کنم,O O B-amount I-amount B-Method I-Method O O B-username I-username O O B-iban O O,transaction_paya
+موجودی با حساب با بانک مرکزی صادرات از اقای صالح سلیمانی نام به دفتر شماره 1 شبا ایت ir789541000056210781007834 چه هم قدر است,O O O B-Bankname O B-Username O O O B-Iban O O O,balance_query
+اسم من سجاد فضلی هست,O O B-Username I-Username O,introduce
+از IR123456789123456789 به علی مبلغ دوازده میلیون تومان,O B-iban O B-username O B-amount I-amount I-amount,transaction_paya
+علی مریم علی محمدی,B-Username I-Username,introduce
+به نظرت حساب بانک ملت من موجودی داره,O O O O B-Bankname O O O,balance_query
+موعد برای قبض برق هر من از سر رسیده ای و باید میتواند از واحد طریق اصول بانک ملت پرداخت بشه,O B-Billname I-Billname O O O O O O O B-Bankname I-Bankname O O,bill_payment
+لطفا قبض برق من رو پرداخت کن,O B-Billname I-Billname O O O O,bill_payment
+از حسابم قبض آبم و میدی,O O B-Billname I-Billname O O,bill_payment
+توی تا کارت همه ملتم به چقدره,O O B-Bankname O,balance_query
+بوگو ببینیم چقده پوول دارم,O O O O O,balance_query
+قبض از نوع تلفن منزل به شناسه قبض 1257895425632 و شناسه پرداخت 45896254 به مبلغ 200 هزار تومان,B-Billname O O I-Billname O O O O B-Billname O O O B-Billname O O B-amount I-amount O,bill_payment
+از حساب ملتم به حساب IR1234567891234656789 همین امروز پایا کن,O O B-bankname O O B-iban O O B-Method O,transaction_paya
+آیا امکان پرداخت قبض گاز از طریق کارت شماره 5022-2910-2424-1414 وجود دارد,O O O B-Billname I-Billname O O O O B-Cartnumber O O,bill_payment
+اگر میخوام با حواله و پایا ما بزنم,O B-Method I-Method O,transaction_paya
+بهم بگو ببینم چطور میشه قبض گار پرداخت بشه,O O O O O B-Billname I-Billname O O,bill_payment
+از حساب زمین اصلی ، ۵۵ میلیون هزار ۰۰۰ تومان تو به کارت رضا دارد بزن,O O O O B-Amount I-Amount I-Amount O O B-Username O,transaction_card
+برای حساب علیرضا اکبری 100 میلیون پایا کن,O O B-username I-username B-amount I-amount B-Method O,transaction_paya
+من میخوام دست 5 هفت هزار تومن حساب های خودم باید به شماره ۶ کارت5022443212556989 بانک پاسارگاد به نام صاحب مریم احمد شکری از واریز کنم امد ولی وقتی خطا میده,O O B-Amount I-Amount I-Amount O O O O B-Cartnumber O B-Bankname O O B-Username I-Username O O O O O,transaction_card
+در شماره حساب 90056789 میزان موجودی به من اعلام کن,O O O B-accountnumber O O O O O O,balance_query
+از چجوری ٬ 10 100 ملیون... حواله تقسیم کنم به کارت سلطان ملت ممد ، با نام شماره ۲۵ شبای ملی ir5465123185674561,O B-amount I-amount O O O O B-bankname B-username O O O B-iban,transaction_paya
+من امشب 12 میلیون حواله پایا به نام علی رنجبر به شماره IR789541000056210781007836 ارسال کنم,O O B-amount I-amount B-Method I-Method O O B-username I-username O O B-iban O O,transaction_paya
+کو موجودیمو · بگو ، کارت 12 5022 - 7 2910 - 2424 - 203 1414,O O O B-cardnumber,balance_query
+تلاش برای ادامه حساب علی علی باقری به 100 تومن کارت تو به کارت کن,O O B-Username I-Username B-Amount O B-Method I-Method I-Method O,transaction_card
+مریم محمدی,B-Username I-Username,introduce
+مبلغ 50 میلیون پایا بزن به علی احمدی,O B-amount I-amount B-Method O O B-username I-username,transaction_paya
+این دوست دارم اگر کارت را به صورت کارت کنم,O O B-Method I-Method I-Method O,transaction_card
+موجودی حساب من چقدر است,O O O O O,balance_query
+موجودی حساب بانک ملتم چیه,O O B-Bankname B-Username O,balance_query
+من میخوام 400 هزار تومن به شماره شبا IR789541000056210781007836 به نام مائده سعادتی پایا کنم,O O B-amount I-amount I-amount O O O B-iban O O B-username I-username B-Method O,transaction_paya
+دوست دارم پایا بزنم,O O B-Method O,transaction_paya
+میخوام 50 هزار تومن به علی باقری کارت به کارت کنم,O B-Amount I-Amount I-Amount O B-Username I-Username B-Method I-Method I-Method O,transaction_card
+برای احسان محمودی 50 هزار تومان پول واریز کن,O B-Username I-Username B-Amount I-Amount I-Amount O O O,transaction_card
+شما میخوام به حساب میرزا محمد میرزا توکلی پول و کارت را به یاد کارت کنم,O O O B-Username I-Username O B-Method I-Method I-Method O,transaction_card
+درخواست پرداخت قبض اب به شماره شناسه 86754788999987,O O B-Billname I-Billname O O O O,bill_payment
+مبلغ ده میلیون به شماره IR123456789123456789 پایا کن,O B-amount I-amount O O B-iban B-Method O,transaction_paya
+لطفا یه حواله پایا بزن برام,O O B-Method I-Method O O,transaction_paya
+موجودی ملتم چقدر هست,O B-Bankname O O,balance_query
+به حساب رضا احمدی ۳ میلیون تومان پایا کن,O O B-username I-username B-amount I-amount I-amount B-Method O,transaction_paya
+من میخوام از حساب بانک ملت خودم مبلغ 30 میلیون به حساب بانک ملت بابام به نام علی مالکی به شماره حساب 87858420 واریز کنم,O O O O O B-Bankname O O B-Amount I-Amount O O O B-Bankname O O O B-Username I-Username O O O B-Accountnumber O O,transaction_card
+میشه موجودی حساب ملی من رو بگی,O O O B-Bankname O O O,balance_query
+موجودی حساب بانک صادرات آقای سلیمانی به شماره شبا IR789541000056210781007834 چه قدر است,O O O B-Bankname O B-Username O O O B-Iban O O O,balance_query
+عملیات قبوض کردن برق و مصرف گاز را از روی حساب متوسط سپه ۱۰ ام پرداخت کن,B-Billname I-Billname O I-Billname O O O B-Bankname O O O,bill_payment
+حدود 250 الف هزار تومن بی کارت به کارت کن شرکت به کارت برد محمود محمد ریاحی,B-Amount I-Amount I-Amount B-Method I-Method I-Method O O O B-Username I-Username,transaction_card
+موجودی حساب به شماره حساب 2356049 چقدر,O O O O O B-accountnumber O,balance_query
+از حساب ۱۲۳۴۵۶۷ پول قبض آب رو بده,O O B-Accountnumber O B-Billname I-Billname O O,bill_payment
+قانون به نظرت حساب بانک اگر ملت به من منابع موجودی داره,O O O O B-Bankname O O O,balance_query
+آیا امکان پرداخت قبض تلفن از حساب بانک ملت وجود دارد,O O O B-Billname I-Billname O O B-Bankname I-Bankname O O,bill_payment
+موجودی بانک ملت‌مو بهم بگو,O B-Bankname I-Bankname O O,balance_query
+صد ساله تومان تو به کارت رضا علی احمدی خون بریز,B-Amount I-Amount O O B-Username I-Username O,transaction_card
+لطفا از شماره کارت بانک ملی مبلغ 100 هزار تومان به کارت 5022-2910-2424-1414 به نام حسن ناصری بانک سپه منتقل گردد,O O O O O B-Bankname O B-Amount I-Amount I-Amount O O B-Cartnumber O O B-Username I-Username O B-Bankname O O,transaction_card
+20 میلیون به صورت پایا بزن,B-amount I-amount O O B-Method O,transaction_paya
+توی کارت ملتم چقدره,O O B-Bankname O,balance_query
+بو پول ک واریز کن,O O O,transaction_card
+بیست تومان به کارت علی احمدی بزن از کارت ملت م که تاریخش ۰۳ ۰۴ هست,B-Amount I-Amount O O B-Username I-Username O O O B-Bankname O O O B-exprdate B-exprdate O,transaction_card
+چطور تا میتوانم از کل اپشن برای حواله استفاده کنم تا یک پول رو که به او شماره شبای او ir5465123185674561 است به نام دی قلی پور واریز عرضه کنم,O O O O B-Method O O O O O O O O B-iban O O B-username I-username O O,transaction_paya
+امام علی بن اکبریم,B-Username I-Username,introduce
+« بانک کشاورزی ملی من فروش نمیدونم اطلاعات موجودیش من چقدره لطفا بهم ، بگو,B-Bankname I-Bankname O O O O O O O,balance_query
+میخوام 50 تومن برنم به کارت علیرضا که شماره کارتش اینه 5892101058924130,O B-Amount I-Amount O O O B-Username O O O O B-Cartnumber,transaction_card
+مبلغ از 300 هزار تومان از یک حساب جدید به شماره ال 2356049489563 به نام امیر محمد محمد گرگانی متعلق به بانک صادرات شعبه جنوب کرج حساب را به حساب به شماره 7895456284526 به به نام ایمان رضا رسولی منتقل کن,O B-Amount I-Amount I-Amount O O O O B-Accountnumber O O B-Username I-Username O O O B-Bankname O O O O O O O B-Accountnumber O O B-Username I-Username O O,transaction_card
+۱۲۰ هزار دلار به ایران حساب رضا ، احمدی به بزن از وزارت کارت ملتم,B-Amount I-Amount O O B-Username I-Username O O O B-Bankname,transaction_card
+من یه کارت مسکن دارم به شماره کارت 2112456432132 لطفا اگر ممکن هست بهم بگو چقدر پول داخلش موجودی داره,O O O B-Bankname O O O O B-cardnumber O O O O O O O O O O O,balance_query
+فرداد محسنی هستم,B-Username I-Username O,introduce
+همه قبض‌های من را با هر یک از کارت‌هایم که موجودی دارند پرداخت کن و نتیجه را گزارش بده,O B-Billname O O O O O O O O O O O O O O O O O,bill_payment
+اما من یه کارت مسکن دارم و به معنی شماره ثبت کارت 2112456432132 لطفا اگر انجا ممکن ما هست بهم بگو کرد چقدر پول را داخلش جمع موجودی جدا داره,O O O B-Bankname O O O O B-cardnumber O O O O O O O O O O O,balance_query
+نیاز موجودی به حساب من الان چقدر قطع است,O O O O O O,balance_query
+20 دو میلیون نفر به طول صورت پایا بزن,B-amount I-amount O O B-Method O,transaction_paya
+من میخوام 5 هزار تومن حساب خودم به شماره کارت5022443212556989 بانک پاسارگاد به نام مریم شکری واریز کنم ولی خطا میده,O O B-Amount I-Amount I-Amount O O O O B-Cartnumber O B-Bankname O O B-Username I-Username O O O O O,transaction_card
+برابر 50 الف ملیون از حواله ما باید دست بزنم به سید علی او که شماره شبای بانک مرکزی ملتش است ir5465123185674561 که هست,B-amount I-amount O O O O B-username O O O O O B-iban O,transaction_paya
+تاریخ کارت اولیه به عنوان کارت دو میخوام را از تپه کارت ملی کشور به شماره ثبت کارت 4548875812457103 انجام انجام بدم,B-Method I-Method I-Method O O O B-Bankname O O O B-Cartnumber O O,transaction_card
+ک میشه ی برام پی یه ی حواله و پایا بزنی,O O O B-Method I-Method O,transaction_paya
+عمرو چجوری میگوید به دلیل شماره یک حساب 532156489675896 که 50 هزار نفر تومن از پول را بزنم,O O O O B-Accountnumber B-Amount I-Amount I-Amount O O,transaction_card
+وقتی پول وارد کارت به کارت ارايه کن,O B-Method I-Method I-Method O,transaction_card
